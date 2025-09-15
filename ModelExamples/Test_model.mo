@@ -1,10 +1,10 @@
 within ModelExamples;
 
-model Test
+model Test_model
   Real x(start=1);
   parameter Real a = 10;
 
 equation
   der(x) = -a*x;
   annotation(experiment(StopTime=1));
-end Test;
+end Test_model;
